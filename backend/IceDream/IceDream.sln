@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceDream.Messaging", "IceDr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceDream.Contracts", "IceDream.Contracts\IceDream.Contracts.csproj", "{FCFAE989-2346-4798-A5A8-7157DB055BA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceDream.Tests", "IceDream.Tests\IceDream.Tests.csproj", "{43942A11-B3B8-48B0-A5D8-6CD5465BA825}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,9 +49,16 @@ Global
 		{FCFAE989-2346-4798-A5A8-7157DB055BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCFAE989-2346-4798-A5A8-7157DB055BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCFAE989-2346-4798-A5A8-7157DB055BA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43942A11-B3B8-48B0-A5D8-6CD5465BA825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43942A11-B3B8-48B0-A5D8-6CD5465BA825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43942A11-B3B8-48B0-A5D8-6CD5465BA825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43942A11-B3B8-48B0-A5D8-6CD5465BA825}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43942A11-B3B8-48B0-A5D8-6CD5465BA825} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BD6345DD-D51A-4A26-A54F-43FDA1505996}

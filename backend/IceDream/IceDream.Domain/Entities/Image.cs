@@ -9,24 +9,24 @@ namespace IceDream.Domain.Entities
         public Guid ProductId { get; private set; }
         public Product Product { get; private set; }
 
-        public Image(byte[] file, bool main, Guid productId)
+        public Image(Guid productId, byte[] file, bool main)
         {
-            Validate(file, productId);
+            Validate(productId, file);
             File = file;
             Main = main;
             ProductId = productId;
         }
 
-        private void Validate(byte[] file, Guid productId)
+        private void Validate(Guid productId, byte[] file)
         {
             if (file == null || file.Length == 0)
             {
-                throw new ArgumentException(ImageErrorMessage.InvalidFile, nameof(file));
+                throw new ArgumentException(ImageErrorMessage.InvalidFile);
             }
 
             if (productId == Guid.Empty)
             {
-                throw new ArgumentException(ImageErrorMessage.InvalidProductId, nameof(productId));
+                throw new ArgumentException(ImageErrorMessage.InvalidProductId);
             }
         }
     }

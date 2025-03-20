@@ -18,12 +18,12 @@ namespace IceDream.Domain.Entities
         {
             if (string.IsNullOrWhiteSpace(name) || name.Length <= 3)
             {
-                throw new ArgumentException(CategoryErrorMessage.InvalidName, nameof(name));
+                throw new ArgumentException(CategoryErrorMessage.InvalidName);
             }
 
             if (string.IsNullOrWhiteSpace(description) || description.Length <= 3)
             {
-                throw new ArgumentException(CategoryErrorMessage.InvalidDescription, nameof(description));
+                throw new ArgumentException(CategoryErrorMessage.InvalidDescription);
             }
         }
     }

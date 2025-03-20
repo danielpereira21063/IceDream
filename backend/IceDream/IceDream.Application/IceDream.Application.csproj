@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\" />
+    <Folder Include="DTOs\Create\" />
+    <Folder Include="DTOs\Update\" />
   </ItemGroup>
 
 </Project>

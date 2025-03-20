@@ -12,9 +12,9 @@ namespace IceDream.Domain.Entities
         public Guid CategoryId { get; private set; }
         public Category Category { get; private set; }
 
-        public Product(string name, string description, decimal price, Guid imageId, Guid categoryId)
+        public Product(Guid imageId, Guid categoryId, string name, string description, decimal price)
         {
-            Validate(name, description, price, imageId, categoryId);
+            Validate(imageId, categoryId, name, description, price);
             Name = name;
             Description = description;
             Price = price;
@@ -22,31 +22,31 @@ namespace IceDream.Domain.Entities
             CategoryId = categoryId;
         }
 
-        private void Validate(string name, string description, decimal price, Guid imageId, Guid categoryId)
+        private void Validate(Guid imageId, Guid categoryId, string name, string description, decimal price)
         {
             if (string.IsNullOrWhiteSpace(name) || name.Length <= 3)
             {
-                throw new ArgumentException(ProductErrorMessage.InvaldiName, nameof(name));
+                throw new ArgumentException(ProductErrorMessage.InvaldiName);
             }
 
             if (string.IsNullOrWhiteSpace(description) || description.Length <= 3)
             {
-                throw new ArgumentException(ProductErrorMessage.InvalidDescription, nameof(description));
+                throw new ArgumentException(ProductErrorMessage.InvalidDescription);
             }
 
             if (price <= 0)
             {
-                throw new ArgumentException(ProductErrorMessage.InvalidPrice, nameof(price));
+                throw new ArgumentException(ProductErrorMessage.InvalidPrice);
             }
 
             if (imageId == Guid.Empty)
             {
-                throw new ArgumentException(ProductErrorMessage.InvalidImageId, nameof(imageId));
+                throw new ArgumentException(ProductErrorMessage.InvalidImageId);
             }
 
             if (categoryId == Guid.Empty)
             {
-                throw new ArgumentException(ProductErrorMessage.InvalidCategoryId, nameof(categoryId));
+                throw new ArgumentException(ProductErrorMessage.InvalidCategoryId);
             }
         }
     }
