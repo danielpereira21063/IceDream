@@ -26,7 +26,7 @@ namespace IceDream.Domain.Entities
         {
             if (string.IsNullOrWhiteSpace(name) || name.Length <= 3)
             {
-                throw new ArgumentException(ProductErrorMessage.InvaldiName);
+                throw new ArgumentException(ProductErrorMessage.InvalidName);
             }
 
             if (string.IsNullOrWhiteSpace(description) || description.Length <= 3)

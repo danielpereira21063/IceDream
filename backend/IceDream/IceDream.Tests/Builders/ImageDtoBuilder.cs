@@ -1,5 +1,4 @@
-﻿using AutoFixture;
-using IceDream.Application.DTOs;
+﻿using IceDream.Application.DTOs.Image;
 
 namespace IceDream.Tests.Builders
 {

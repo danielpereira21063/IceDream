@@ -1,6 +1,6 @@
 ﻿namespace IceDream.Application.DTOs
 {
-    public abstract class AbstractDto
+    public abstract record AbstractDto
     {
         public Guid Id { get; set; }
         public DateTime CreatedAt { get; set; }

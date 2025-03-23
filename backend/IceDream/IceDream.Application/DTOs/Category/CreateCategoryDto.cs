@@ -1,6 +1,6 @@
-﻿namespace IceDream.Application.DTOs
+﻿namespace IceDream.Application.DTOs.Cateory
 {
-    public class CategoryDto : AbstractDto
+    public record CreateCategoryDto
     {
         public string Name { get; set; }
         public string? Description { get; set; }

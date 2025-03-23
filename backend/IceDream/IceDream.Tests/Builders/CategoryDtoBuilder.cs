@@ -1,4 +1,4 @@
-﻿using IceDream.Application.DTOs;
+﻿using IceDream.Application.DTOs.Cateory;
 
 namespace IceDream.Tests.Builders
 {
