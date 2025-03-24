@@ -1,10 +1,10 @@
 ﻿using FluentValidation;
-using IceDream.Application.DTOs.Cateory;
+using IceDream.Application.Features.Categories.Commands;
 using IceDream.Domain.Constants.ErrorMessages;
 
-namespace IceDream.Application.Validators.Category
+namespace IceDream.Application.Common.Validators.Category
 {
-    public class UpdateCategoryDtoValidator : AbstractValidator<UpdateCategoryDto>
+    public class UpdateCategoryDtoValidator : AbstractValidator<UpdateCategoryCommand>
     {
         public UpdateCategoryDtoValidator()
         {

@@ -1,12 +1,12 @@
 ﻿using FluentValidation;
-using IceDream.Application.DTOs.Cateory;
+using IceDream.Application.Features.Categories.Commands;
 using IceDream.Domain.Constants.ErrorMessages;
 
-namespace IceDream.Application.Validators.Category
+namespace IceDream.Application.Common.Validators.Category
 {
-    public class CreateCategoryDtoValidator : AbstractValidator<CreateCategoryDto>
+    public class CreateCategoryCommandValidator : AbstractValidator<CreateCategoryComand>
     {
-        public CreateCategoryDtoValidator()
+        public CreateCategoryCommandValidator()
         {
             RuleFor(x => x.Name)
                 .NotEmpty().WithMessage(CategoryErrorMessage.InvalidName)

@@ -1,5 +1,5 @@
-﻿using IceDream.Application.DTOs;
-using IceDream.Application.DTOs.Product;
+﻿using IceDream.Application.DTOs.Product;
+using IceDream.Application.Features.Products.Commands;
 using IceDream.Domain.Entities;
 
 namespace IceDream.Application.Common.Mappings
@@ -11,12 +11,12 @@ namespace IceDream.Application.Common.Mappings
             return new Product(product.ImageId, product.CategoryId, product.Name, product.Description, product.Price);
         }
 
-        public static Product ToProduct(this UpdateProductDto product)
+        public static Product ToProduct(this UpdateProductCommand product)
         {
             return new Product(product.ImageId, product.CategoryId, product.Name, product.Description, product.Price);
         }
 
-        public static Product ToProduct(this CreateProductDto product)
+        public static Product ToProduct(this CreateProductCommand product)
         {
             return new Product(product.ImageId, product.CategoryId, product.Name, product.Description, product.Price);
         }

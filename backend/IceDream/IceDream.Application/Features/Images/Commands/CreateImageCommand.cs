@@ -1,6 +1,6 @@
-﻿namespace IceDream.Application.DTOs.Image
+﻿namespace IceDream.Application.Features.Images.Commands
 {
-    public record UpdateImageDto : AbstractUpdateDto
+    public record CreateImageCommand
     {
         public byte[] File { get; set; }
         public bool Main { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace IceDream.Application.DTOs.Cateory
+﻿namespace IceDream.Application.Features.Categories.Commands
 {
-    public record CreateCategoryDto
+    public record CreateCategoryComand
     {
         public string Name { get; set; }
         public string? Description { get; set; }

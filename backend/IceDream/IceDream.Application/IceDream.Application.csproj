@@ -9,10 +9,8 @@
     <ProjectReference Include="..\IceDream.Domain\IceDream.Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Features\Categories\Commands\" />
     <Folder Include="Features\Categories\Handlers\" />
     <Folder Include="Features\Categories\Queries\" />
-    <Folder Include="Features\Products\Commands\" />
     <Folder Include="Features\Products\Handlers\" />
     <Folder Include="Features\Products\Queries\" />
   </ItemGroup>

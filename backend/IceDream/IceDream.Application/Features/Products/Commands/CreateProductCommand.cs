@@ -1,6 +1,6 @@
-﻿namespace IceDream.Application.DTOs
+﻿namespace IceDream.Application.Features.Products.Commands
 {
-    public record CreateProductDto
+    public record CreateProductCommand
     {
         public string Name { get; set; }
         public string Description { get; set; }

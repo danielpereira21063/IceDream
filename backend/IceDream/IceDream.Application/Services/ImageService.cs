@@ -1,4 +1,5 @@
 ﻿using IceDream.Application.DTOs.Image;
+using IceDream.Application.Features.Images.Commands;
 using IceDream.Application.Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace IceDream.Application.Services
 {
     public class ImageService : IIMageService
     {
-        public Task<ImageDto> CreateImageAsync(CreateImageDto dto)
+        public Task<ImageDto> CreateImageAsync(CreateImageCommand dto)
         {
             throw new NotImplementedException();
         }
@@ -25,7 +26,7 @@ namespace IceDream.Application.Services
             throw new NotImplementedException();
         }
 
-        public Task<ImageDto> UpdateImageAsync(UpdateImageDto dto)
+        public Task<ImageDto> UpdateImageAsync(UpdateImageCommand dto)
         {
             throw new NotImplementedException();
         }

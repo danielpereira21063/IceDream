@@ -1,12 +1,12 @@
 ﻿using FluentValidation;
-using IceDream.Application.DTOs.Product;
+using IceDream.Application.Features.Products.Commands;
 using IceDream.Domain.Constants.ErrorMessages;
 
-namespace IceDream.Application.Validators.Product
+namespace IceDream.Application.Common.Validators.Product
 {
-    public class UpdateProductDtoValidator : AbstractValidator<UpdateProductDto>
+    public class UpdateProductCommandValidator : AbstractValidator<UpdateProductCommand>
     {
-        public UpdateProductDtoValidator()
+        public UpdateProductCommandValidator()
         {
             RuleFor(x => x.Id)
                 .NotEmpty().WithMessage(ProductErrorMessage.ProductIdRequiredForUpdate);

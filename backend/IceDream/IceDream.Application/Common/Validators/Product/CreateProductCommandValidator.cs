@@ -1,11 +1,11 @@
 ﻿using FluentValidation;
-using IceDream.Application.DTOs;
+using IceDream.Application.Features.Products.Commands;
 
-namespace IceDream.Application.Validators.Product
+namespace IceDream.Application.Common.Validators.Product
 {
-    public class CreateProductDtoValidator : AbstractValidator<CreateProductDto>
+    public class CreateProductCommandValidator : AbstractValidator<CreateProductCommand>
     {
-        public CreateProductDtoValidator()
+        public CreateProductCommandValidator()
         {
             RuleFor(x => x.Name)
                 .NotEmpty().WithMessage(ProductErrorMessage.InvalidName)
